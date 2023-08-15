@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header>
+    <h2 class="text-center text-capitalize text-5xl p-5">Let's get some <span class="text-violet-500" >money</span></h2>
+
+   </header>
+   <main>
+    <section>
+       <div class="w-9/12 mx-auto grid grid-cols-3 text-white text-3xl mt-9 gap-5">
+        <div class="bg-lime-500 p-8 rounded-lg">
+            <h3>deposit</h3>
+            <h2>$<span id="total-amount">00</span></h2>
+        </div>
+        <div class=" bg-orange-400 p-8 rounded-lg">
+            <h3>withdraw</h3>
+            <h2>$  <span id="widthdraw-total">00</span></h2>
+        </div>
+        <div class=" bg-red-300 p-8 rounded-lg">
+            <h3">balance</h3>
+            <h2 class="">$ <span id="blance-deposit">1240</span> </h2>
+        </div>
+        
+       </div>
+
+    </section>
+
+    <!-- deposit section here -->
+
+    <section>
+        <div class="w-9/12 mx-auto grid grid-cols-2  text-1xl mt-9 gap-5 p-3 ">
+            <div class=" bg-orange-300 p-8 rounded-lg ">
+                <h3 class="text-white p-2"> please deposit</h3>
+                <input id="deposit-text" class="w-9/12 p-2" type="text" placeholder=" amonut you want to deposit;">
+                <button id="deposit" class=" bg-amber-700 p-3 rounded-md block w-30 mt-2 ">deposit</button>
+            </div>
+            
+            <div class=" bg-yellow-500 p-8 rounded-lg">
+                <h3 class="p-2 text-white"> please withdraw</h3>
+                <input id="widthdraw-input" class="w-9/12  p-2" type="text" placeholder=" amonut you want to widthdraw ;">
+                <button id="widthdraw" class=" bg-amber-700 p-3 rounded-md block w-30 mt-2 ">withdraw</button>
+            </div>
+            
+           </div>
+    </section>
+   </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/widthdraw.js"></script>
+</body>
+</html>
